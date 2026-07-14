@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>R$ 99 BOX | UTILIDADES</title>
+  <title>R$ 99 BOX | utilidades</title>
   <link rel="shortcut icon" href="icon.png" type="image/x-icon">
 
   <!-- Fontes: Inter para textos longos e Montserrat para títulos/preços de e-commerce -->
@@ -317,6 +317,38 @@
       background: #4cd051;
     }
 
+    /* Floating Instagram */
+    .insta {
+      position: fixed;
+      bottom: 110px; /* Posicionado exatamente acima do botão do WhatsApp */
+      right: 30px;
+      width: 65px;
+      height: 65px;
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      border: var(--border-game);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-decoration: none;
+      box-shadow: 0 6px 0px #000;
+      transition: var(--transition);
+      z-index: 999;
+    }
+
+    .insta svg {
+      width: 28px;
+      height: 28px;
+      fill: currentColor;
+    }
+
+    .insta:hover {
+      transform: scale(1.08) translateY(-4px);
+      box-shadow: 0 10px 0px #000;
+      filter: brightness(1.1);
+    }
+
     /* Responsividade */
     @media (max-width: 768px) {
       header {
@@ -353,19 +385,18 @@
     <div class="beneficios">
       <div class="box">
         <span class="box-icon">📞</span>
-        Atendimento via whatsApp
+        Atendimento via whatsApp <br>
+        (11) 95365-8040
       </div>
       <div class="box">
         <span class="box-icon">📦</span>
         Itens à pronta-entrega
       </div>
-      <div class="box">
-        <span class="box-icon">🏆</span>
-        Produtos selecionados
-      </div>
+     
       <div class="box">
         <span class="box-icon">💳</span>
-        Pague só quando receber
+        Pague somente quando receber <br>
+        PIX: 953658040
       </div>
     </div>
   </section>
@@ -373,6 +404,13 @@
   <footer>
     © 2026 Todos os direitos reservados.
   </footer>
+
+  <!-- Instagram SVG Icon -->
+  <a class="insta" href="https://www.instagram.com/SEU_PERFIL/" target="_blank" aria-label="Siga-nos no Instagram">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+    </svg>
+  </a>
 
   <!-- WhatsApp SVG Icon -->
   <a class="whats" href="https://wa.me/5511953658040" target="_blank" aria-label="Fale Conosco no WhatsApp">
@@ -389,32 +427,36 @@
         descricao: "Tecnologia inteligente para inflar pneus de carros, motos, bicicletas e acessórios de forma automatizada e com máxima precisão.",
         preco: "R$ 99,00",
         imagem: "calibrador.jpg",
-        textoBotao: "EM ESTOQUE",
-        corBotao: "var(--mario-red)" // Vermelho padrão
+        textoBotao: "EM ESTOQUE | VER FOTOS",
+        corBotao: "var(--mario-red)", // Vermelho padrão
+        linkInstagram: "https://www.instagram.com/p/EXEMPLO1/" // Link do post/reels do Calibrador
       },
       {
         nome: "Carregador de Bateria 12V",
-        descricao: "Preserve a vida útil de sua bateria. Recupera e carrega sistemas automotivos com pulses de microcorrente automatizados.",
+        descricao: "Preserva a vida útil da sua bateria. Recupera e carrega sistemas automotivos com descargas de microcorrente automatizadas.",
         preco: "R$ 99,00",
         imagem: "carregador.jpg",
-        textoBotao: "EM ESTOQUE",
-        corBotao: "var(--mario-red)" // Vermelho padrão
+        textoBotao: "EM ESTOQUE | VER FOTOS",
+        corBotao: "var(--mario-red)", // Vermelho padrão
+        linkInstagram: "https://www.instagram.com/p/EXEMPLO2/" // Link do post/reels do Carregador
       },
       {
         nome: "Lavadora Portátil 48V",
         descricao: "Liberdade sem fios. Lavadora de alta pressão recarregável de alta performance para limpezas profundas em qualquer lugar.",
         preco: "R$ 99,00",
         imagem: "lavadora.jpg",
-        textoBotao: "EM ESTOQUE",
-        corBotao: "var(--mario-red)" // Vermelho padrão
+        textoBotao: "EM ESTOQUE | VER FOTOS",
+        corBotao: "var(--mario-red)", // Vermelho padrão
+        linkInstagram: "https://www.instagram.com/p/EXEMPLO3/" // Link do post/reels da Lavadora
       },
       {
         nome: "Soprador Elétrico",
         descricao: "A força ideal para eliminar poeira e detritos em componentes sensíveis como eletrônicos, estofados e detalhes automotivos.",
         preco: "R$ 99,00",
         imagem: "soprador.jpg",
-        textoBotao: "EM ESTOQUE",
-        corBotao: "var(--mario-red)" // Vermelho padrão
+        textoBotao: "EM ESTOQUE | VER FOTOS",
+        corBotao: "var(--mario-red)", // Vermelho padrão
+        linkInstagram: "https://www.instagram.com/p/EXEMPLO4/" // Link do post/reels do Soprador
       }
     ];
 
@@ -441,6 +483,13 @@
         </div>
       `;
 
+      // Evento de clique no botão (Redireciona para o Instagram específico)
+      card.querySelector('.btn').onclick = (e) => {
+        e.stopPropagation(); // Impede que o clique no botão ative o clique do card (WhatsApp)
+        window.open(produto.linkInstagram, "_blank");
+      };
+
+      // Evento de clique no card (Redireciona para o WhatsApp para comprar)
       card.onclick = () => {
         const mensagem = `Olá! Gostaria de adquirir o produto:\n\n*${produto.nome}* (R$ 99,00)\n\nComo posso finalizar a compra?`;
         window.open(
