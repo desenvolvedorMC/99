@@ -1,1 +1,1 @@
-R$ 99 é um projeto e site de e-commerce.
+R$ 99 é um projeto de site de e-commerce.
